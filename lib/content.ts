@@ -10,9 +10,13 @@ export const site = {
 	name: "Jay Sahay",
 	tagline:
 		"hey there! i'm Jay. I like to build, learn and be curious about software.",
-	// Used for <meta name="description"> in app/layout.tsx.
-	description: "developer portfolio of Jay Sahay",
-	url: "https://example.com",
+	// Used for <meta name="description"> and the Open Graph card. Social
+	// crawlers (LinkedIn in particular) want at least 100 characters.
+	description:
+		"Portfolio of Jay Sahay, a backend-leaning developer building Spring Boot services, REST APIs, load balancers and developer tools, with writing on Java and Go concurrency.",
+	// Must be the real deployed origin: metadataBase resolves the og:image URL
+	// against it, so a placeholder here silently breaks link previews.
+	url: "https://jaysahayportfolio.vercel.app",
 };
 
 export const nav = [
